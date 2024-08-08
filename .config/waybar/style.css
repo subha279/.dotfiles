@@ -1,9 +1,8 @@
-@import "/home/subha/.cache/wal/colors-waybar.css";
-
-@define-color main-color @color13;
+@define-color main-color #c53b53;
+@define-color background transparent;
 
 * {
-  font: bold 16px "Intel One Mono";
+  font: bold 15px "Intel One Mono";
   border: none;
   border-radius: 0px;
   box-shadow: none;
@@ -12,8 +11,8 @@
 
 window#waybar {
   background: alpha(@background, 0.3);
-  border: 3px solid @main-color;
-  border-radius: 10px;
+  border: 1px solid @main-color;
+  border-radius: 0px;
 }
 
 #window {
@@ -31,7 +30,7 @@ tooltip {
 }
 
 tooltip label {
-  color: @foreground;
+  color: @main-color;
 }
 
 #workspaces {
@@ -43,7 +42,7 @@ tooltip label {
 #workspaces button {
   padding: 0px 4px;
   margin: 4px 4px;
-  color: alpha(@foreground, 0.5);
+  color: alpha(@main-color, 0.5);
 }
 
 #workspaces button.active {

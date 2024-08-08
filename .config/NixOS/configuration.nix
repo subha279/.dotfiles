@@ -157,7 +157,6 @@
     slurp
     wl-clipboard
     zoxide
-    pywal
     python3
     cargo
     blueman

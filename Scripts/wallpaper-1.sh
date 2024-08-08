@@ -12,4 +12,5 @@ TYPE="any"
 DURATION=2
 SWWW_TRANSITION="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION"
 
-swww query || swww init && swww img ${RANDOMPICS} $SWWW_TRANSITION && wal -i ${RANDOMPICS}
+swww query || swww init && swww img ${RANDOMPICS} $SWWW_TRANSITION
+#&& wal -i ${RANDOMPICS}

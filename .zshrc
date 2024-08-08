@@ -78,6 +78,6 @@ alias sv='sudo nvim'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-(cat ~/.cache/wal/sequences &)
-cat ~/.cache/wal/sequences
-source ~/.cache/wal/colors-tty.sh
+#(cat ~/.cache/wal/sequences &)
+#cat ~/.cache/wal/sequences
+#source ~/.cache/wal/colors-tty.sh
