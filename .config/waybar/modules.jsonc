@@ -1,0 +1,87 @@
+{  
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+    },
+  },
+
+  "custom/icon" :{
+    "format": "",
+  },
+  
+  "custom/spotify":{
+    "exec": "/home/subha/Scripts/spotify.sh",
+    "format":" {}",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+  },
+
+  "clock":{
+    "format": "{:%I:%M %p %A %d/%m/%Y}",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>",
+  },
+
+  "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+
+  "network": {
+        "tooltip": true,
+        "format-wifi": "{essid} ({signalStrength}%)  ",
+        "rotate": 0,
+        "format-ethernet": "󰈁",
+        "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+        "format-linked": "󰈁{ifname} (No IP)",
+        "format-disconnected": "󰖪",
+        "tooltip-format-disconnected": "Disconnected",
+        "format-alt": "<span> {bandwidthDownBytes}</span> <span> {bandwidthUpBytes}</span>",
+        "interval": 2,
+    },
+
+  "pulseaudio": {
+        "format": "{icon} {volume}%{format_source}",
+        "format-bluetooth": "{icon}  {volume}%{format_source}",
+        "format-bluetooth-muted": "󰂲 {icon}  {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": " ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+  "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "rotate": 0,
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{time} remaining",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+}

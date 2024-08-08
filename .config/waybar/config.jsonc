@@ -1,0 +1,25 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "margin": "10 200 0 200",
+  "fixed-center": true,
+  "reload_style_on_change": true,
+  "include": ["~/.config/waybar/modules.jsonc"],
+
+  "modules-left": [
+    "custom/icon",
+    "hyprland/workspaces",
+    "custom/spotify",
+  ],
+  
+  "modules-center": [
+    "clock",
+  ],
+
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "battery",
+  ],
+}
