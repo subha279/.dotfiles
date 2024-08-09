@@ -1,8 +1,8 @@
 // define colors etc.
 * {
     bg: #1a1b26;
-    hv: #f7768e; 
-    primary: #f7768e; 
+    hv: #7aa2f7; 
+    primary: #7aa2f7; 
     ug: #0B2447;
     font: "Intel One Mono 11";
     background-color: @bg;
