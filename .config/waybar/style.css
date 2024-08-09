@@ -1,4 +1,4 @@
-@define-color main-color #c53b53;
+@define-color main-color #9966ff;
 @define-color background transparent;
 
 * {
@@ -11,7 +11,7 @@
 
 window#waybar {
   background: alpha(@background, 0.3);
-  border: 1px solid @main-color;
+  border: 2px solid @main-color;
   border-radius: 0px;
 }
 
